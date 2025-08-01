@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Code } from "lucide-react";
 import SidebarItem from "./SidebarItem";
 const Sidebar = () => {
@@ -8,7 +9,7 @@ const Sidebar = () => {
       aria-label="Sidebar"
     >
       <button className="text-sm border w-[60%] max-w-[350px] ml-5 mt-10 bg-indigo-500 text-white py-2 rounded-lg">
-        + New Snippet
+        <Link href="/dashboard/new">+ New Snippet</Link>
       </button>
       <div className="py-5 px-5 text-gray-600">
         <div className="mt-2">
